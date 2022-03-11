@@ -1,11 +1,70 @@
-.footer{
-	background-color: rgb(88, 88, 88);
-	color: white;
-	text-align: center;
-	padding: 24px 0;
-	margin-top: 40px;
+.contact-footer a{
+	position: relative;
+	font-family: 'lato';
+	font-size: 8vw;
+	text-transform: uppercase;
+	color: #DFDED6;
+	font-weight: 400;
+}
+.rs-footer{
+	position: relative;
+	width: 75%;
+	margin: 50px auto 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.rs-footer a{
+	position: relative;
+	font-family: 'lato';
+	font-size: 3vw;
+	text-transform: uppercase;
+	color: #DFDED6;
+	font-weight: 400;
+}
+.rs-footer a::after{
+	content: "";
+	border-bottom: solid 1px #DFDED6;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	transform: scaleX(0);
+	transform-origin: right;
+	transition: transform .3s cubic-bezier(.65,.05,.36,1);
+}
+.rs-footer a:hover::after{
+	transform: scaleX(1);
+	transform-origin: left;
 }
 
+.contact-footer a::after{
+	content: "";
+	border-bottom: solid 1px #DFDED6;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	transform: scaleX(1);
+	transform-origin: left;
+	transition: transform .3s cubic-bezier(.65,.05,.36,1);
+}
+.contact-footer a:hover::after{
+	transform: scaleX(0);
+	transform-origin: right;
+}
+.footer{
+	background-color: #1A0C0F;
+	color: white;
+	text-align: center;
+	padding: 80px 0;
+	margin-top: 40px;
+	position: bottom;
+}
 .footer p{
 	font-family: Lato;
+	font-size: 10px;
+	color: white;
+	text-align: center;
 }

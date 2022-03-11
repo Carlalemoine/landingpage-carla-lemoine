@@ -2,6 +2,7 @@
 @import url('banner.css');
 @import url('buttons.css');
 @import url('footer.css');
+@import url('container.css');
 
 a{
 	text-decoration: none;
@@ -11,6 +12,8 @@ body {
 	margin: 0px;
 	text-align: center;
 	background-color: #DFDED6;
+	width: 100vw;
+	overflow-x: hidden;
 }
 
 h1 {
@@ -23,8 +26,32 @@ h1 {
 h2 {
 	font-size: 30px;
 	text-align: center;
-	font font-family: "fredoka";
-	margin: 20px;
+	color: #1A0C0F;
+	font-family: "Anton";
+	letter-spacing: .2rem;
+	text-shadow: 3px 2px 0px white;
+
+}
+h4 {
+	font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    text-transform: uppercase;
+    letter-spacing: 1.2vw;
+    line-height: 6vw;
+    font-size: 3.2vw;
+    color: #1A0C0F;
+	margin-left: 5%;
+	margin-right: 5%; 
+}
+
+p{
+	font-size: 15px;
+	margin-left: 30px;
+	margin-right: 30px;
+	color: #686767;
+	position: left;
+	line-height: 1.5em;
+	text-align: justify;
 }
 
 img{
@@ -33,17 +60,19 @@ img{
 }
 
 
-@media (min-width: 576px) { 
-	.cards{
-		grid-template-columns: 1fr, 1fr;
-	}
+
+.parallax-effect {
+  background-image: url("https://cdn.shopify.com/s/files/1/2141/2691/articles/Meet_DanDanBlog_BannerImage_800x.jpg?v=1630911383");
+  min-height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+ align-items: center;
 }
 
-@media (min-width: 576px) { 
-	.cards{
-		grid-template-columns: 1fr, 1fr, 1fr;
-	}
-}
 
 
 
